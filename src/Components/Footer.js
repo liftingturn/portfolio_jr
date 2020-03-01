@@ -2,7 +2,6 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import '../Styles/FullPage.css'
 import { Typography, Container, Link, Grid } from '@material-ui/core'
-import Copyright from './Copyright'
 
 const Footer = () => {
     const classes = useStyles()
@@ -29,6 +28,15 @@ const Footer = () => {
                     >
                         haejoon.dev@gmail.com
                     </Typography>
+                </Typography>
+                <Typography variant="body2" color="primary" align="center">
+                    {'github 👉🏻'}
+                    <Link
+                        color="secondary"
+                        href="https://github.com/liftingturn"
+                    >
+                        https://github.com/liftingturn
+                    </Link>
                 </Typography>
             </Container>
         </Grid>

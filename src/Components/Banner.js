@@ -1,6 +1,8 @@
 import React from 'react'
 import { Paper, Grid, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
+import Intro from './Intro'
+import Footer from './Footer'
 
 export default function Banner() {
     const classes = useStyles()
@@ -15,8 +17,8 @@ export default function Banner() {
                 />
             }
             <div className={classes.overlay} />
-            <Grid container>
-                <Grid item md={6}>
+            <Grid container justify="center">
+                <Grid item md={6} style={{ marginRight: '40%' }}>
                     <div className={classes.mainContent}>
                         <Typography
                             component="h2"
@@ -25,8 +27,10 @@ export default function Banner() {
                             gutterBottom
                             align="center"
                         >
-                            Web Front Engineer
+                            Junior Web Developer
                         </Typography>
+                        <Intro />
+                        <Footer />
                     </div>
                 </Grid>
             </Grid>
@@ -40,7 +44,8 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.grey[800],
         color: theme.palette.common.white,
         marginBottom: theme.spacing(4),
-        backgroundImage: 'url(https://source.unsplash.com/user/erondu)',
+        backgroundImage:
+            'url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80)',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'

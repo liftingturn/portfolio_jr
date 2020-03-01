@@ -6,6 +6,7 @@ import Intro from './Intro'
 import Footer from './Footer'
 import SkillContainer from './SkillContainer'
 import ProjectContainer from './ProjectContainer'
+import Contact from './Contact'
 
 const FullPage = fullpageProps => {
     // const classes = useStyles();
@@ -17,8 +18,8 @@ const FullPage = fullpageProps => {
                     <div id="fullpage-wrapper">
                         <div className="section">
                             <Banner />
-                            <Intro />
-                            <Footer />
+                            {/* <Intro />
+                            <Footer /> */}
                         </div>
                         <div className="section">
                             <SkillContainer />
@@ -27,7 +28,7 @@ const FullPage = fullpageProps => {
                             <ProjectContainer />
                         </div>
                         <div className="section">
-                            {/* <ThanksContainer /> */}
+                            <Contact />
                         </div>
                     </div>
                 )

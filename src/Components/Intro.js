@@ -19,7 +19,8 @@ const Intro = () => {
                 component="h4"
                 variant="h4"
             >
-                항상 배움의 자세를 가지는 개발자가 되고 싶습니다.
+                조금 더 편한 세상을 만드는 <br />
+                개발자가 되고 싶습니다.
             </Typography>
         </Grid>
     )
