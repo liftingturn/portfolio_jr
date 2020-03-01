@@ -18,8 +18,6 @@ const FullPage = fullpageProps => {
                     <div id="fullpage-wrapper">
                         <div className="section">
                             <Banner />
-                            {/* <Intro />
-                            <Footer /> */}
                         </div>
                         <div className="section">
                             <SkillContainer />

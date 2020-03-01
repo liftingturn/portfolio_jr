@@ -4,14 +4,14 @@ import './App.css'
 import FullPage from './Components/FullPage'
 
 const fullpageOptions = {
-    anchors: ['Top', 'second', 'third', 'fourth'],
+    anchors: ['Top', 'Skillset', 'Projects', 'Thanks'],
     sectionsColor: ['#171b23', '#171b23', '#171b23', '#171b23'],
     callbacks: ['onLeave'],
     scrollingSpeed: 480,
     scrollOverflow: false,
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['Top', 'second', 'third', 'fourth'],
+    navigationTooltips: ['Top', 'Skillset', 'Projects', 'Thanks'],
     autoScrolling: true,
     scrollHorizontally: true,
     keyboardScrolling: true
