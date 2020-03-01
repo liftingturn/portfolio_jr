@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import FullPage from './Components/FullPage'
+
+const fullpageOptions = {
+    anchors: ['first', 'second', 'third', 'fourth'],
+    sectionsColor: ['#171b23', '#171b23', '#171b23', '#171b23'],
+    callbacks: ['onLeave'],
+    scrollingSpeed: 480,
+    scrollOverflow: false,
+    navigation: true,
+    navigationPosition: 'right',
+    navigationTooltips: ['first', 'second', 'third', 'fourth'],
+    autoScrolling: true,
+    scrollHorizontally: true,
+    keyboardScrolling: true
 }
 
-export default App;
+function App() {
+    return <FullPage {...fullpageOptions} />
+}
+
+export default App
